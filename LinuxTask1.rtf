@@ -1,0 +1,104 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red64\green11\blue217;\red47\green180\blue29;
+}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c32309\c18666\c88229;\cssrgb\c20241\c73898\c14950;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh17440\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 [ec2-user@ip-172-31-20-45 lklinux]$ pwd\
+/home/ec2-user/lklinux\
+[ec2-user@ip-172-31-20-45 lklinux]$ mkdir task1\
+[ec2-user@ip-172-31-20-45 lklinux]$ cd task1\
+[ec2-user@ip-172-31-20-45 task1]$ vi test.sh\
+[ec2-user@ip-172-31-20-45 task1]$ ./test.sh\
+-bash: ./test.sh: Permission denied\
+[ec2-user@ip-172-31-20-45 task1]$ chmdo 755 test.sh\
+-bash: chmdo: command not found\
+[ec2-user@ip-172-31-20-45 task1]$ chmod 755 test.sh\
+[ec2-user@ip-172-31-20-45 task1]$ ./test.sh\
+[ec2-user@ip-172-31-20-45 task1]$ ls -latr\
+total 80\
+drwxr-xr-x. 3 ec2-user ec2-user    80 Nov 24 07:38 
+\f1\b \cf3 ..
+\f0\b0 \cf2 \
+-rwxr-xr-x. 1 ec2-user ec2-user   893 Nov 24 07:45 
+\f1\b \cf4 test.sh
+\f0\b0 \cf2 \
+-rw-r--r--. 1 ec2-user ec2-user    25 Nov 24 07:46 task9.txt\
+-rw-r--r--. 1 ec2-user ec2-user    25 Nov 24 07:46 task8.txt\
+-rw-r--r--. 1 ec2-user ec2-user    26 Nov 24 07:46 task7.txt\
+-rw-r--r--. 1 ec2-user ec2-user    24 Nov 24 07:46 task6.txt\
+-rw-r--r--. 1 ec2-user ec2-user    24 Nov 24 07:46 task5.txt\
+-rw-r--r--. 1 ec2-user ec2-user    24 Nov 24 07:46 task4.txt\
+-rw-r--r--. 1 ec2-user ec2-user    24 Nov 24 07:46 task3.txt\
+-rw-r--r--. 1 ec2-user ec2-user    70 Nov 24 07:46 task20.txt\
+-rw-r--r--. 1 ec2-user ec2-user    25 Nov 24 07:46 task2.txt\
+-rw-r--r--. 1 ec2-user ec2-user    73 Nov 24 07:46 task18.txt\
+-rw-r--r--. 1 ec2-user ec2-user    70 Nov 24 07:46 task16.txt\
+-rw-r--r--. 1 ec2-user ec2-user    72 Nov 24 07:46 task14.txt\
+-rw-r--r--. 1 ec2-user ec2-user    72 Nov 24 07:46 task12.txt\
+-rw-r--r--. 1 ec2-user ec2-user    24 Nov 24 07:46 task10.txt\
+-rw-r--r--. 1 ec2-user ec2-user    24 Nov 24 07:46 task1.txt\
+drwxr-xr-x. 2 ec2-user ec2-user 16384 Nov 24 07:46 
+\f1\b \cf3 .
+\f0\b0 \cf2 \
+[ec2-user@ip-172-31-20-45 task1]$ vi test.sh\
+[ec2-user@ip-172-31-20-45 task1]$ rm -rf task*\
+[ec2-user@ip-172-31-20-45 task1]$ ls -latr\
+total 4\
+drwxr-xr-x. 3 ec2-user ec2-user  80 Nov 24 07:38 
+\f1\b \cf3 ..
+\f0\b0 \cf2 \
+-rwxr-xr-x. 1 ec2-user ec2-user 903 Nov 24 07:47 
+\f1\b \cf4 test.sh
+\f0\b0 \cf2 \
+drwxr-xr-x. 2 ec2-user ec2-user  21 Nov 24 07:47 
+\f1\b \cf3 .
+\f0\b0 \cf2 \
+[ec2-user@ip-172-31-20-45 task1]$ ./test.sh\
+[ec2-user@ip-172-31-20-45 task1]$ ls -latr\
+total 100\
+drwxr-xr-x. 3 ec2-user ec2-user    80 Nov 24 07:38 
+\f1\b \cf3 ..
+\f0\b0 \cf2 \
+-rwxr-xr-x. 1 ec2-user ec2-user   903 Nov 24 07:47 
+\f1\b \cf4 test.sh
+\f0\b0 \cf2 \
+-rw-r--r--. 1 ec2-user ec2-user    25 Nov 24 07:47 task9.txt\
+-rw-r--r--. 1 ec2-user ec2-user    25 Nov 24 07:47 task8.txt\
+-rw-r--r--. 1 ec2-user ec2-user    26 Nov 24 07:47 task7.txt\
+-rw-r--r--. 1 ec2-user ec2-user    24 Nov 24 07:47 task6.txt\
+-rw-r--r--. 1 ec2-user ec2-user    24 Nov 24 07:47 task5.txt\
+-rw-r--r--. 1 ec2-user ec2-user    24 Nov 24 07:47 task4.txt\
+-rw-r--r--. 1 ec2-user ec2-user    24 Nov 24 07:47 task3.txt\
+-rw-r--r--. 1 ec2-user ec2-user    25 Nov 24 07:47 task20.txt\
+-rw-r--r--. 1 ec2-user ec2-user    25 Nov 24 07:47 task2.txt\
+-rw-r--r--. 1 ec2-user ec2-user    27 Nov 24 07:47 task19.txt\
+-rw-r--r--. 1 ec2-user ec2-user    27 Nov 24 07:47 task18.txt\
+-rw-r--r--. 1 ec2-user ec2-user    28 Nov 24 07:47 task17.txt\
+-rw-r--r--. 1 ec2-user ec2-user    26 Nov 24 07:47 task16.txt\
+-rw-r--r--. 1 ec2-user ec2-user    26 Nov 24 07:47 task15.txt\
+-rw-r--r--. 1 ec2-user ec2-user    27 Nov 24 07:47 task14.txt\
+-rw-r--r--. 1 ec2-user ec2-user    27 Nov 24 07:47 task13.txt\
+-rw-r--r--. 1 ec2-user ec2-user    27 Nov 24 07:47 task12.txt\
+-rw-r--r--. 1 ec2-user ec2-user    27 Nov 24 07:47 task11.txt\
+-rw-r--r--. 1 ec2-user ec2-user    24 Nov 24 07:47 task10.txt\
+-rw-r--r--. 1 ec2-user ec2-user    24 Nov 24 07:47 task1.txt\
+drwxr-xr-x. 2 ec2-user ec2-user 16384 Nov 24 07:47 
+\f1\b \cf3 .
+\f0\b0 \cf2 \
+[ec2-user@ip-172-31-20-45 task1]$ mv task1.txt task1.xml\
+[ec2-user@ip-172-31-20-45 task1]$ mv task2.txt task2.xml\
+[ec2-user@ip-172-31-20-45 task1]$ mv task3.txt task3.xml\
+[ec2-user@ip-172-31-20-45 task1]$ mv task4.txt task4.xml\
+[ec2-user@ip-172-31-20-45 task1]$ mv task5.txt task5.xml\
+[ec2-user@ip-172-31-20-45 task1]$ client_loop: send disconnect: Broken pipe\
+(base) lakshmis-air:Downloads kanthan76$ \
+\
+\
+\
+\
+{\field{\*\fldinst{HYPERLINK "https://docs.google.com/document/d/1kAMkVHG9DDQ7it_bS4pTEEe2eJQMDFODIioQ1Fgj7KQ/edit?tab=t.0"}}{\fldrslt https://docs.google.com/document/d/1kAMkVHG9DDQ7it_bS4pTEEe2eJQMDFODIioQ1Fgj7KQ/edit?tab=t.0}}\
+}
